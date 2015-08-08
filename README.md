@@ -1,5 +1,5 @@
 # Windows-10-PowerShell-MIDI
-Use Windows 10 MIDI APIs from PowerShell to control all sorts of things
+Use Windows 10 MIDI APIs from PowerShell to control all sorts of things. If you can automate it from PowerShell, you'll now be able to have it either send information to a MIDI device (sounds, lighting, etc.), or be triggered from a MIDI controller (like programmable touch pads and other controllers).
 
 Currently, the code here includes only MIDI send, with the examples written for the Novation LaunchPad.
 
