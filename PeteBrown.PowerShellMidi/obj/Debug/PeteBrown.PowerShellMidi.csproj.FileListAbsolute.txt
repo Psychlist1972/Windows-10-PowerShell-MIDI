@@ -1,0 +1,9 @@
+d:\users\pete\documents\visual studio 2015\Projects\Windows10-Powershell-Midi\PeteBrown.PowerShellMidi\bin\Debug\PeteBrown.PowerShellMidi.dll
+d:\users\pete\documents\visual studio 2015\Projects\Windows10-Powershell-Midi\PeteBrown.PowerShellMidi\bin\Debug\PeteBrown.PowerShellMidi.pdb
+d:\users\pete\documents\visual studio 2015\Projects\Windows10-Powershell-Midi\PeteBrown.PowerShellMidi\bin\Debug\System.Management.Automation.dll
+d:\users\pete\documents\visual studio 2015\Projects\Windows10-Powershell-Midi\PeteBrown.PowerShellMidi\bin\Debug\System.Runtime.WindowsRuntime.dll
+d:\users\pete\documents\visual studio 2015\Projects\Windows10-Powershell-Midi\PeteBrown.PowerShellMidi\bin\Debug\Windows.winmd
+d:\users\pete\documents\visual studio 2015\Projects\Windows10-Powershell-Midi\PeteBrown.PowerShellMidi\bin\Debug\System.Runtime.WindowsRuntime.xml
+d:\users\pete\documents\visual studio 2015\Projects\Windows10-Powershell-Midi\PeteBrown.PowerShellMidi\obj\Debug\PeteBrown.PowerShellMidi.dll
+d:\users\pete\documents\visual studio 2015\Projects\Windows10-Powershell-Midi\PeteBrown.PowerShellMidi\obj\Debug\PeteBrown.PowerShellMidi.pdb
+D:\Users\Pete\Documents\Visual Studio 2015\Projects\Windows10-Powershell-Midi\PeteBrown.PowerShellMidi\obj\Debug\PeteBrown.PowerShellMidi.csprojResolveAssemblyReference.cache

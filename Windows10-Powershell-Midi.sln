@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F5034706-568F-408A-B7B3-4D38C6DB8A32}") = "Windows10-Powershell-Midi", "Windows10-Powershell-Midi\Windows10-Powershell-Midi.pssproj", "{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeteBrown.PowerShellMidi", "PeteBrown.PowerShellMidi\PeteBrown.PowerShellMidi.csproj", "{C502149E-AF18-4E9F-B554-B76F4B791283}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C502149E-AF18-4E9F-B554-B76F4B791283}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C502149E-AF18-4E9F-B554-B76F4B791283}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C502149E-AF18-4E9F-B554-B76F4B791283}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C502149E-AF18-4E9F-B554-B76F4B791283}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
