@@ -7,3 +7,12 @@ d:\users\pete\documents\visual studio 2015\Projects\Windows10-Powershell-Midi\Pe
 d:\users\pete\documents\visual studio 2015\Projects\Windows10-Powershell-Midi\PeteBrown.PowerShellMidi\obj\Debug\PeteBrown.PowerShellMidi.dll
 d:\users\pete\documents\visual studio 2015\Projects\Windows10-Powershell-Midi\PeteBrown.PowerShellMidi\obj\Debug\PeteBrown.PowerShellMidi.pdb
 D:\Users\Pete\Documents\Visual Studio 2015\Projects\Windows10-Powershell-Midi\PeteBrown.PowerShellMidi\obj\Debug\PeteBrown.PowerShellMidi.csprojResolveAssemblyReference.cache
+D:\Users\Pete\Documents\GitHub\Windows-10-PowerShell-MIDI\PeteBrown.PowerShellMidi\bin\Debug\PeteBrown.PowerShellMidi.dll
+D:\Users\Pete\Documents\GitHub\Windows-10-PowerShell-MIDI\PeteBrown.PowerShellMidi\bin\Debug\PeteBrown.PowerShellMidi.pdb
+D:\Users\Pete\Documents\GitHub\Windows-10-PowerShell-MIDI\PeteBrown.PowerShellMidi\bin\Debug\System.Management.Automation.dll
+D:\Users\Pete\Documents\GitHub\Windows-10-PowerShell-MIDI\PeteBrown.PowerShellMidi\bin\Debug\System.Runtime.WindowsRuntime.dll
+D:\Users\Pete\Documents\GitHub\Windows-10-PowerShell-MIDI\PeteBrown.PowerShellMidi\bin\Debug\Windows.winmd
+D:\Users\Pete\Documents\GitHub\Windows-10-PowerShell-MIDI\PeteBrown.PowerShellMidi\bin\Debug\System.Runtime.WindowsRuntime.xml
+D:\Users\Pete\Documents\GitHub\Windows-10-PowerShell-MIDI\PeteBrown.PowerShellMidi\obj\Debug\PeteBrown.PowerShellMidi.dll
+D:\Users\Pete\Documents\GitHub\Windows-10-PowerShell-MIDI\PeteBrown.PowerShellMidi\obj\Debug\PeteBrown.PowerShellMidi.pdb
+D:\Users\Pete\Documents\GitHub\Windows-10-PowerShell-MIDI\PeteBrown.PowerShellMidi\obj\Debug\PeteBrown.PowerShellMidi.csprojResolveAssemblyReference.cache

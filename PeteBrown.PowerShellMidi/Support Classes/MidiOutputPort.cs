@@ -9,17 +9,11 @@ namespace PeteBrown.PowerShellMidi
 {
     public class MidiOutputPort
     {
-        private MidiOutPort _port;
+        public IMidiOutPort RawPort { get; private set; }
 
-        public MidiOutPort RawPort
+        public MidiOutputPort(IMidiOutPort port)
         {
-            get { return _port; }
-        }
-
-        public MidiOutputPort(MidiOutPort port)
-        {
-            _port = port;
-
+            RawPort = port;
         }
     }
 }

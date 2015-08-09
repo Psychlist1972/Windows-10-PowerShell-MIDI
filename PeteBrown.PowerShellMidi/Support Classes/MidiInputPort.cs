@@ -7,28 +7,62 @@ using Windows.Devices.Midi;
 
 namespace PeteBrown.PowerShellMidi
 {
-    public delegate void MidiInputMessageReceivedEventHandler (object sender, MidiInputMessageReceivedEventArgs args);
+    public delegate void MidiNoteOnMessageReceivedEventHandler(object sender, MidiNoteOnMessageReceivedEventArgs args);
+    public delegate void MidiNoteOffMessageReceivedEventHandler(object sender, MidiNoteOffMessageReceivedEventArgs args);
+    public delegate void MidiControlChangeMessageReceivedEventHandler(object sender, MidiControlChangeMessageReceivedEventArgs args);
+    public delegate void MidiProgramChangeMessageReceivedEventHandler(object sender, MidiProgramChangeMessageReceivedEventArgs args);
 
     public class MidiInputPort
     {
-        private MidiInPort _port;
+        public MidiInPort RawPort { get; private set; }
+
 
         public MidiInputPort(MidiInPort port)
         {
-            _port = port;
+            RawPort = port;
 
-            _port.MessageReceived += OnMidiMessageReceived;
+            RawPort.MessageReceived += OnMidiMessageReceived;
         }
 
         private void OnMidiMessageReceived(MidiInPort sender, MidiMessageReceivedEventArgs args)
         {
-            if (MessageReceived != null)
-                MessageReceived(this, new MidiInputMessageReceivedEventArgs(args.Message));
+            switch (args.Message.Type)
+            {
+                case MidiMessageType.NoteOn:
+                    var noteOnMessage = args.Message as MidiNoteOnMessage;
+                    if (NoteOnMessageReceived != null)
+                        NoteOnMessageReceived(this, new MidiNoteOnMessageReceivedEventArgs(noteOnMessage.Channel, noteOnMessage.Note, noteOnMessage.Velocity));
+                    break;
+
+                case MidiMessageType.NoteOff:
+                    var noteOffMessage = args.Message as MidiNoteOffMessage;
+                    if (NoteOffMessageReceived != null)
+                        NoteOffMessageReceived(this, new MidiNoteOffMessageReceivedEventArgs(noteOffMessage.Channel, noteOffMessage.Note, noteOffMessage.Velocity));
+                    break;
+
+                case MidiMessageType.ControlChange:
+                    var ccMessage = args.Message as MidiControlChangeMessage;
+                    if (ControlChangeMessageReceived != null)
+                        ControlChangeMessageReceived(this, new MidiControlChangeMessageReceivedEventArgs(ccMessage.Channel, ccMessage.Controller, ccMessage.ControlValue));
+                    break;
+
+                case MidiMessageType.ProgramChange:
+                    var programMessage = args.Message as MidiProgramChangeMessage;
+                    if (ProgramChangeMessageReceived != null)
+                        ProgramChangeMessageReceived(this, new MidiProgramChangeMessageReceivedEventArgs(programMessage.Channel, programMessage.Program));
+                    break;
+
+                default:
+                    // message type we don't handle above. Ignore
+                    break;
+            }
+
         }
 
-        public event MidiInputMessageReceivedEventHandler MessageReceived;
-
-
+        public event MidiNoteOnMessageReceivedEventHandler NoteOnMessageReceived;
+        public event MidiNoteOffMessageReceivedEventHandler NoteOffMessageReceived;
+        public event MidiControlChangeMessageReceivedEventHandler ControlChangeMessageReceived;
+        public event MidiProgramChangeMessageReceivedEventHandler ProgramChangeMessageReceived;
 
     }
 }

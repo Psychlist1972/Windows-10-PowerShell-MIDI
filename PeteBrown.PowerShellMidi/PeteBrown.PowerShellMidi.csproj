@@ -61,11 +61,13 @@
     <Compile Include="Cmdlets\GetMidiInputPort.cs" />
     <Compile Include="Cmdlets\GetMidiOutputPort.cs" />
     <Compile Include="Cmdlets\GetMidiOutputDeviceInformation.cs" />
+    <Compile Include="Support Classes\MidiControlChangeMessageReceivedEventArgs.cs" />
     <Compile Include="Support Classes\MidiDeviceInformation.cs" />
-    <Compile Include="Support Classes\MidiInputMessageReceivedEventArgs.cs" />
     <Compile Include="Support Classes\MidiInputPort.cs" />
     <Compile Include="Support Classes\MidiChannelMessageSenderBase.cs" />
     <Compile Include="Support Classes\MidiMessageSenderBase.cs" />
+    <Compile Include="Support Classes\MidiNoteOffMessageReceivedEventArgs.cs" />
+    <Compile Include="Support Classes\MidiNoteOnMessageReceivedEventArgs.cs" />
     <Compile Include="Support Classes\MidiOutputPort.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Cmdlets\SendMidiActiveSensingMessage.cs" />
@@ -86,6 +88,7 @@
     <Compile Include="Cmdlets\SendMidiTimeCodeMessage.cs" />
     <Compile Include="Cmdlets\SendMidiTimingClockMessage.cs" />
     <Compile Include="Cmdlets\SendMidiTuneRequestMessage.cs" />
+    <Compile Include="Support Classes\MidiProgramChangeMessageReceivedEventArgs.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

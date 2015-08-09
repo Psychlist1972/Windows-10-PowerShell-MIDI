@@ -25,7 +25,12 @@ namespace PeteBrown.PowerShellMidi
             {
                 var port = await MidiInPort.FromIdAsync(Id);
 
-                WriteObject(port);
+                WriteDebug("Acquired input port: " + port.DeviceId);
+
+                // we need to wrap this because PowerShell doesn't understand WinRT/UWP events
+                var inputPort = new MidiInputPort(port);
+
+                WriteObject(inputPort);
             }
             else
             {

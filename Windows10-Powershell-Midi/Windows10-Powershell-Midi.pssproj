@@ -27,7 +27,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="launchpad-input-event-example.ps1" />
+    <Compile Include="launchpad-light-all-pads-example.ps1" />
     <Compile Include="launchpad-lightshow-example.ps1" />
+    <Compile Include="launchpad-reset-example.ps1" />
+    <Compile Include="launchpad-stop-scrolling-example.ps1" />
     <Compile Include="send-midi-message-example.ps1" />
     <Compile Include="list-midi-example.ps1" />
   </ItemGroup>

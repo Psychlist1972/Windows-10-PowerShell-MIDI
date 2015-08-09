@@ -26,7 +26,10 @@ namespace PeteBrown.PowerShellMidi
 
                 WriteDebug("Acquired output port: " + port.DeviceId);
 
-                WriteObject(port);
+                // powershell has problems with some WinRT/UWP objects, so better to wrap it here
+                var outputPort = new MidiOutputPort(port);
+
+                WriteObject(outputPort);
             }
             else
             {
