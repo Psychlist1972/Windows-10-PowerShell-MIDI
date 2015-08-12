@@ -8,23 +8,25 @@
 Import-Module "D:\Users\Pete\Documents\GitHub\Windows-10-PowerShell-MIDI\PeteBrown.PowerShellMidi\bin\Debug\PeteBrown.PowerShellMidi.dll"
 
 
-Write-Output "MIDI Input Devices ========================= "
+Write-Host "  "
+Write-Host "MIDI Input Devices ========================= " -ForegroundColor Cyan
 
 $inputDevices = Get-MidiInputDeviceInformation
 foreach ($device in $inputDevices)
 {
-	Write-Output $device.Name
-	Write-Output $device.Id
-	Write-Output " -- "
+	Write-Host "  "
+	Write-Host "  Name: " -NoNewline -ForegroundColor DarkGray; Write-Host $device.Name  -ForegroundColor Red
+	Write-Host "  ID: " -NoNewline -ForegroundColor DarkGray; Write-Host $device.Id  -ForegroundColor Red
 }
 
-Write-Output "MIDI Output Devices ========================= "
+Write-Host "  "
+Write-Host "MIDI Output Devices ========================= " -ForegroundColor Cyan
 
 $outputDevices = Get-MidiOutputDeviceInformation
 foreach ($device in $outputDevices)
 {
-	Write-Output $device.Name
-	Write-Output $device.Id
-	Write-Output " -- "
+	Write-Host "  "
+	Write-Host "  Name: " -NoNewline -ForegroundColor DarkGray; Write-Host $device.Name  -ForegroundColor Red
+	Write-Host "  ID: " -NoNewline -ForegroundColor DarkGray; Write-Host $device.Id  -ForegroundColor Red
 }
 
