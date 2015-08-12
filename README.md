@@ -20,9 +20,13 @@ To use the MIDI API from PowerShell, copy the compiled C# DLL to the folder wher
 
 Requires Windows 10 and .NET (installed with Windows 10), plus a little imagination.
 
+## What's it not for?
+
+This isn't meant to be a high-performance MIDI scripting library. PowerShell, by its nature, is command-line focused and is not like sending MIDI messages straight from compiled C code. If there are common requests that you believe should be packaged up into higher performance code and made its own PowerShell cmdlet, however, I'm happy to entertain that. See Requests below.
+
 ## Requests?
 
-If you have ideas for scripts you want to see as an example, please let me know. Also, if you have some functionality you'd like to see exposed, or something made easier, I'm happy to work on this to make it as useful as possible.
+If you have ideas for scripts you want to see as examples, please let me know. Also, if you have some functionality you'd like to see exposed, or something made easier, I'm happy to work on this to make it as useful and fun as possible.
 
 ## System Requirements
 
