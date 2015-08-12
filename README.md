@@ -12,7 +12,7 @@ This library enables you to use Windows 10 MIDI APIs from PowerShell. If you can
 
 ## What does it include?
 
-Currently, the code here includes MIDI send, and basic MIDI receive, plus continuous controller messages.
+The code here includes MIDI send, and basic MIDI receive (note on/off, plus continuous controller messages, and program change). The samples were written using a Novation LaunchPad, but are generic enough (with the exception of the text banner scrolling) to work on anything.
 
 ## How do I use it?
 
