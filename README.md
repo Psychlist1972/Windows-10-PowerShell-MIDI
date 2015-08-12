@@ -24,7 +24,12 @@ PowerShell version 5 comes with Windows 10.
 
 [Upcoming PowerShell Book on Amazon](http://www.amazon.com/Windows-PowerShell-Step-3rd/dp/0735675112/ref=sr_1_1?s=books&ie=UTF8&qid=1439375829&sr=1-1&keywords=windows+powershell)
 
-## What is this?
+### What does the script look like?
+
+It's like other shell scripts, with a .NET and WMI lean to it. Here's a simple example to list the MIDI devices on the system.
+![Example Script](/doc/powershell_example_code.png)
+
+## What is this project?
 
 This library enables you to use Windows 10 MIDI APIs from PowerShell. If you can automate it from PowerShell, you'll now be able to have it either send information to a MIDI device (sounds, lighting, etc.), or be triggered from a MIDI controller (like programmable touch pads and other controllers).
 
