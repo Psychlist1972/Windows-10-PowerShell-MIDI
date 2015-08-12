@@ -15,10 +15,10 @@ PowerShell can be extended through cmdlets (command-lets) written typically in C
 PowerShell version 5 comes with Windows 10.
 
 Some PowerShell sites:
-https://technet.microsoft.com/en-us/scriptcenter/dd742419.aspx?f=255&MSPPError=-2147217396
-http://www.techrepublic.com/blog/10-things/10-cool-things-you-can-do-with-windows-powershell/
-https://technet.microsoft.com/en-us/library/bb978526.aspx
-http://www.amazon.com/Windows-PowerShell-Step-3rd/dp/0735675112/ref=sr_1_1?s=books&ie=UTF8&qid=1439375829&sr=1-1&keywords=windows+powershell
+[PowerShell Scripting Center](https://technet.microsoft.com/en-us/scriptcenter/dd742419.aspx)
+[10 Cool things you can do with Windows PowerShell](http://www.techrepublic.com/blog/10-things/10-cool-things-you-can-do-with-windows-powershell/)
+[Scripting with Windows PowerShell](https://technet.microsoft.com/en-us/library/bb978526.aspx)
+[Upcoming PowerShell Book on Amazon](http://www.amazon.com/Windows-PowerShell-Step-3rd/dp/0735675112/ref=sr_1_1?s=books&ie=UTF8&qid=1439375829&sr=1-1&keywords=windows+powershell)
 
 ## What is this?
 
