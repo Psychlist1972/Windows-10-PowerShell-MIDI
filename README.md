@@ -6,7 +6,7 @@ I've been totally jealous of that for some time. With the release of Windows 10 
 
 ![Input Events](/doc/powershell_midi.png)
 
-## What is PowerShell?
+## What is Windows PowerShell?
 
 PowerShell is the advanced command prompt/shell built into Windows. It first found favor with network/system administrators, but has since expanded to include client and IoT developers, as well as web folks, among the users. It does require some programming savvy, so it's not something you can use to drag and drop components to build out a script.
 
@@ -14,10 +14,14 @@ PowerShell can be extended through cmdlets (command-lets) written typically in C
 
 PowerShell version 5 comes with Windows 10.
 
-Some PowerShell sites:
+### Some PowerShell sites:
+
 [PowerShell Scripting Center](https://technet.microsoft.com/en-us/scriptcenter/dd742419.aspx)
+
 [10 Cool things you can do with Windows PowerShell](http://www.techrepublic.com/blog/10-things/10-cool-things-you-can-do-with-windows-powershell/)
+
 [Scripting with Windows PowerShell](https://technet.microsoft.com/en-us/library/bb978526.aspx)
+
 [Upcoming PowerShell Book on Amazon](http://www.amazon.com/Windows-PowerShell-Step-3rd/dp/0735675112/ref=sr_1_1?s=books&ie=UTF8&qid=1439375829&sr=1-1&keywords=windows+powershell)
 
 ## What is this?
