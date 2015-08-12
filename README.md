@@ -12,19 +12,19 @@ This library enables you to use Windows 10 MIDI APIs from PowerShell. If you can
 
 Currently, the code here includes MIDI send, and basic MIDI receive, plus continuous controller messages.
 
-# How do I use it?
+## How do I use it?
 
 To use the MIDI API from PowerShell, copy the compiled C# DLL to the folder where your script resides (or some other convenient location) and update the import path in the script.
 
 Requires Windows 10 and .NET (installed with Windows 10), plus a little imagination.
 
-# Requests?
+## Requests?
 
 If you have ideas for scripts you want to see as an example, please let me know. Also, if you have some functionality you'd like to see exposed, or something made easier, I'm happy to work on this to make it as useful as possible.
 
-# System Requirements
+## System Requirements
 
-Also uses this VS 2015 add-in for editing PowerShell scripts. Required only if you want to load the psproj in Visual Studio and mess around with the source
+This was built using Visual Studio 2015 Community, RTM. It also uses this VS 2015 add-in for editing PowerShell scripts. Required only if you want to load the psproj in Visual Studio and mess around with the source
 https://visualstudiogallery.msdn.microsoft.com/c9eb3ba8-0c59-4944-9a62-6eee37294597
 
 ![command prompt](/doc/powershell_midi.png)
