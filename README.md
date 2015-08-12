@@ -8,7 +8,7 @@ I've been totally jealous of that for some time. With the release of Windows 10 
 
 ## What is Windows PowerShell?
 
-PowerShell is the advanced command prompt/shell built into Windows. It first found favor with network/system administrators, but has since expanded to include client and IoT developers, as well as web folks, among the users. It does require some programming savvy, so it's not something you can use to drag and drop components to build out a script.
+PowerShell is the advanced command prompt/shell built into Windows. It first found favor with network/system administrators, but has since expanded to include client and IoT developers, as well as web folks, among the users. It does require some programming savvy, so it's not something you can use to drag and drop components to build out a script. Also, given the typical audience, the official documentation is...challenging. :)
 
 PowerShell can be extended through cmdlets (command-lets) written typically in C# or Visual Basic. Folks also make script libraries available for others to use both for free and for sale.
 
@@ -24,7 +24,12 @@ PowerShell version 5 comes with Windows 10.
 
 [Upcoming PowerShell Book on Amazon](http://www.amazon.com/Windows-PowerShell-Step-3rd/dp/0735675112/ref=sr_1_1?s=books&ie=UTF8&qid=1439375829&sr=1-1&keywords=windows+powershell)
 
-## What is this?
+### What does the script look like?
+
+It's like other shell scripts, with a .NET and WMI lean to it. Here's a simple example to list the MIDI devices on the system.
+![Example Script](/doc/powershell_example_code.png)
+
+## What is this project?
 
 This library enables you to use Windows 10 MIDI APIs from PowerShell. If you can automate it from PowerShell, you'll now be able to have it either send information to a MIDI device (sounds, lighting, etc.), or be triggered from a MIDI controller (like programmable touch pads and other controllers).
 
