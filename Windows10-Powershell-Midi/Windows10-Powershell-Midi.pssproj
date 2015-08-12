@@ -35,6 +35,9 @@
     <Compile Include="send-midi-message-example.ps1" />
     <Compile Include="list-midi-example.ps1" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="resources.md" />
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Target Name="Build" />
 </Project>
