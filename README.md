@@ -28,7 +28,9 @@ You'll then use that ID when getting an input or output device. See the individu
 
 ## What's it not for?
 
-This isn't meant to be a high-performance MIDI scripting library. PowerShell, by its nature, is command-line focused and is not like sending MIDI messages straight from compiled C code. If there are common requests that you believe should be packaged up into higher performance code and made its own PowerShell cmdlet, however, I'm happy to entertain that. See Requests below.
+This isn't meant to be a high-performance MIDI scripting library. PowerShell, by its nature, is command-line focused and is not like sending MIDI messages straight from compiled C code. For example, this would likely not be a good choice to use to read information off the network, and translate OSC messages to MIDI. :)
+
+If there are common requests that you believe should be packaged up into higher performance code and made its own PowerShell cmdlet, however, I'm happy to entertain that. See Requests below.
 
 ## Requests?
 
