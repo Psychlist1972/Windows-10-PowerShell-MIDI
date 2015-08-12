@@ -16,7 +16,7 @@ The code here includes MIDI send, and basic MIDI receive (note on/off, plus cont
 
 ## How do I use it?
 
-To use the MIDI API from PowerShell, copy the compiled C# DLL to the folder where your script resides (or some other convenient location) and update the import path in the script.
+To use the MIDI API from PowerShell, copy the compiled C# DLL (PeteBrown.PowerShell.Midi.dll) from the /bin/debug folder to the folder where your script resides (or some other convenient location) and update the import path in the script to point to it. Then follow the examples in the scripts for how to send and receive events. The rest is just PowerShell.
 
 Requires Windows 10 and .NET (installed with Windows 10), plus a little imagination.
 
