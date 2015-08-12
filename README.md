@@ -4,7 +4,7 @@ Folks on the Mac use MIDI controllers and the built-in scripting language to con
 
 I've been totally jealous of that for some time. With the release of Windows 10 and our new, modern, multi-client MIDI API, I thought it was time to build out something like this for Windows users. We don't have MIDI routing in Windows yet, but we do have PowerShell, which lets you do a fair bit of automation and other system-level hacking.
 
-![command prompt](/doc/powershell_midi.png)
+![Input Events](/doc/powershell_midi.png)
 
 ## What is it?
 
@@ -19,6 +19,12 @@ The code here includes MIDI send, and basic MIDI receive (note on/off, plus cont
 To use the MIDI API from PowerShell, copy the compiled C# DLL to the folder where your script resides (or some other convenient location) and update the import path in the script.
 
 Requires Windows 10 and .NET (installed with Windows 10), plus a little imagination.
+
+You'll want to get the ID of the MIDI device you plan to use. There's a script made just for that.
+
+![List MIDI devices](/doc/powershell_list_midi_devices.png)
+
+You'll then use that ID when getting an input or output device. See the individual scripts for specific examples.
 
 ## What's it not for?
 
