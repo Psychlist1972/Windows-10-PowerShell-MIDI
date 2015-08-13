@@ -51,7 +51,7 @@ You'll want to get the ID of the MIDI device you plan to use. There's a script m
 
 You'll then use that ID when getting an input or output device. See the individual scripts for specific examples.
 
-Note that because rtpMIDI shows up as a compatible MIDI port recognized by the Windows 10 MIDI API, it works with these PowerShell extensions. For more information, see [Tobias Erichsen's site](http://www.tobias-erichsen.de/software/rtpmidi.html)
+Note that because rtpMIDI shows up as a compatible MIDI port recognized by the Windows 10 MIDI API, it works with these PowerShell extensions, enabling you to send out and respond to MIDI over Ethernet/WiFi. For more information, see [Tobias Erichsen's site](http://www.tobias-erichsen.de/software/rtpmidi.html)
 
 ## What's it not for?
 
