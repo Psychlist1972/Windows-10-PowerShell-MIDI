@@ -32,6 +32,7 @@
     <Compile Include="launchpad-scroll-text-example.ps1" />
     <Compile Include="launchpad-reset-example.ps1" />
     <Compile Include="launchpad-stop-scrolling-example.ps1" />
+    <Compile Include="watch-midi-devices-example.ps1" />
     <Compile Include="send-midi-message-example.ps1" />
     <Compile Include="list-midi-example.ps1" />
   </ItemGroup>

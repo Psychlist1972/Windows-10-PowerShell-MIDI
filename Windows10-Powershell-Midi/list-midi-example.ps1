@@ -17,6 +17,8 @@ foreach ($device in $inputDevices)
 	Write-Host "  "
 	Write-Host "  Name: " -NoNewline -ForegroundColor DarkGray; Write-Host $device.Name  -ForegroundColor Red
 	Write-Host "  ID: " -NoNewline -ForegroundColor DarkGray; Write-Host $device.Id  -ForegroundColor Red
+	Write-Host "  IsDefault: " -NoNewline -ForegroundColor DarkGray; Write-Host $device.IsDefault  -ForegroundColor Red
+	Write-Host "  IsEnabled: " -NoNewline -ForegroundColor DarkGray; Write-Host $device.IsEnabled  -ForegroundColor Red
 }
 
 Write-Host "  "
@@ -28,5 +30,7 @@ foreach ($device in $outputDevices)
 	Write-Host "  "
 	Write-Host "  Name: " -NoNewline -ForegroundColor DarkGray; Write-Host $device.Name  -ForegroundColor Red
 	Write-Host "  ID: " -NoNewline -ForegroundColor DarkGray; Write-Host $device.Id  -ForegroundColor Red
+	Write-Host "  IsDefault: " -NoNewline -ForegroundColor DarkGray; Write-Host $device.IsDefault  -ForegroundColor Red
+	Write-Host "  IsEnabled: " -NoNewline -ForegroundColor DarkGray; Write-Host $device.IsEnabled  -ForegroundColor Red
 }
 

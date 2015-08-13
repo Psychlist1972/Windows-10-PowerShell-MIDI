@@ -59,6 +59,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cmdlets\GetMidiDeviceWatcher.cs" />
     <Compile Include="Support Classes\AsyncPSCmdlet.cs" />
     <Compile Include="Support Classes\AsyncPump.cs" />
     <Compile Include="Cmdlets\GetMidiInputDeviceInformation.cs" />
@@ -66,10 +67,14 @@
     <Compile Include="Cmdlets\GetMidiOutputPort.cs" />
     <Compile Include="Cmdlets\GetMidiOutputDeviceInformation.cs" />
     <Compile Include="Support Classes\MidiControlChangeMessageReceivedEventArgs.cs" />
+    <Compile Include="Support Classes\MidiDeviceUpdatedEventArgs.cs" />
+    <Compile Include="Support Classes\MidiDeviceRemovedEventArgs.cs" />
     <Compile Include="Support Classes\MidiDeviceInformation.cs" />
+    <Compile Include="Support Classes\MidiDeviceWatcher.cs" />
     <Compile Include="Support Classes\MidiInputPort.cs" />
     <Compile Include="Support Classes\MidiChannelMessageSenderBase.cs" />
     <Compile Include="Support Classes\MidiMessageSenderBase.cs" />
+    <Compile Include="Support Classes\MidiDeviceAddedEventArgs.cs" />
     <Compile Include="Support Classes\MidiNoteOffMessageReceivedEventArgs.cs" />
     <Compile Include="Support Classes\MidiNoteOnMessageReceivedEventArgs.cs" />
     <Compile Include="Support Classes\MidiOutputPort.cs" />
