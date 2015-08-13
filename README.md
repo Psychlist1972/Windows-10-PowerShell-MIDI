@@ -51,6 +51,8 @@ You'll want to get the ID of the MIDI device you plan to use. There's a script m
 
 You'll then use that ID when getting an input or output device. See the individual scripts for specific examples.
 
+Note that because rtpMIDI shows up as a compatible MIDI port recognized by the Windows 10 MIDI API, it works with these PowerShell extensions. For more information, see [Tobias Erichsen's site](http://www.tobias-erichsen.de/software/rtpmidi.html)
+
 ## What's it not for?
 
 This isn't meant to be a high-performance MIDI scripting library. PowerShell, by its nature, is command-line focused and is not like sending MIDI messages straight from compiled C code. For example, this would likely not be a good choice to use to read information off the network, and translate OSC messages to MIDI. Similarly, this would probably make a horrible MIDI clock source. :)
