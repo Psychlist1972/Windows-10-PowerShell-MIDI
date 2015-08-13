@@ -12,9 +12,11 @@ PowerShell is the advanced command prompt/shell built into Windows. It first fou
 
 PowerShell can be extended through cmdlets (command-lets) written typically in C# or Visual Basic. Folks also make script libraries available for others to use both for free and for sale.
 
-PowerShell version 5 comes with Windows 10.
+PowerShell 1.0 was released in November 2006 and targeted Windows XP and later. PowerShell version 5 comes with Windows 10. In Windows 10 (and in 8.1 as I recall) you can optionally set PowerShell to be the default command prompt for the power-user menu you get when right-clicking the start button on the task bar.
 
 ### Some PowerShell sites:
+
+[Wikipedia page with overview and description](https://en.wikipedia.org/wiki/Windows_PowerShell)
 
 [PowerShell Scripting Center](https://technet.microsoft.com/en-us/scriptcenter/dd742419.aspx)
 
