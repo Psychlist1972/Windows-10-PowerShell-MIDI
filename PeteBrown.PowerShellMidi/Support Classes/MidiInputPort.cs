@@ -14,21 +14,29 @@ namespace PeteBrown.PowerShellMidi
     public delegate void MidiControlChangeMessageReceivedEventHandler(object sender, MidiControlChangeMessageReceivedEventArgs e);
     public delegate void MidiProgramChangeMessageReceivedEventHandler(object sender, MidiProgramChangeMessageReceivedEventArgs e);
 
+    public enum MidiFilterMode
+    {
+        Inactive,
+        Include,
+        Exclude
+    };
+
     public class MidiInputPort
     {
         public MidiInPort RawPort { get; private set; }
 
         public bool TranslateZeroVelocityNoteOnMessage { get; set; }
 
-        private SynchronizationContext _context;
+        public byte[] FilterNotes { get; set; }
+        public MidiFilterMode FilterMode { get; set; }
 
         public MidiInputPort(MidiInPort port)
         {
-            _context = SynchronizationContext.Current;
-
             RawPort = port;
 
             TranslateZeroVelocityNoteOnMessage = true;
+
+            FilterMode = MidiFilterMode.Inactive;
 
             RawPort.MessageReceived += OnMidiMessageReceived;
         }
@@ -45,50 +53,48 @@ namespace PeteBrown.PowerShellMidi
                     // a zero-velocity note-on message is equivalent to note-off
                     if (noteOnMessage.Velocity == 0 && TranslateZeroVelocityNoteOnMessage)
                     {
-                        if (NoteOffMessageReceived != null)
-                            NoteOffMessageReceived(this, new MidiNoteOffMessageReceivedEventArgs(noteOnMessage.Channel, noteOnMessage.Note, noteOnMessage.Velocity, true));
-                        //else
-                        //    Console.WriteLine("c#: No subscribers to Note-Off event.");
+                        var ev1 = NoteOffMessageReceived;
+                        if (ev1 != null)
+                            ev1(this, new MidiNoteOffMessageReceivedEventArgs(noteOnMessage.Channel, noteOnMessage.Note, noteOnMessage.Velocity, true));
                     }
                     else
                     {
                         // normal note on message
-
-                        if (NoteOnMessageReceived != null)
+                        var ev2 = NoteOnMessageReceived;
+                        if (ev2 != null)
                         {
                             try
                             {
-                                NoteOnMessageReceived(this, new MidiNoteOnMessageReceivedEventArgs(noteOnMessage.Channel, noteOnMessage.Note, noteOnMessage.Velocity));
+                                ev2(this, new MidiNoteOnMessageReceivedEventArgs(noteOnMessage.Channel, noteOnMessage.Note, noteOnMessage.Velocity));
                             }
                             catch (Exception ex)
                             {
                                 Console.WriteLine(ex.ToString());
                             }
                         }
-                        //else
-                        //{
-                        //    Console.WriteLine("c#: No subscribers to Note-On event.");
-                        //}
                     }
 
                     break;
 
                 case MidiMessageType.NoteOff:
                     var noteOffMessage = args.Message as MidiNoteOffMessage;
-                    if (NoteOffMessageReceived != null)
-                        NoteOffMessageReceived(this, new MidiNoteOffMessageReceivedEventArgs(noteOffMessage.Channel, noteOffMessage.Note, noteOffMessage.Velocity, false));
+                    var ev3 = NoteOffMessageReceived;
+                    if (ev3 != null)
+                        ev3(this, new MidiNoteOffMessageReceivedEventArgs(noteOffMessage.Channel, noteOffMessage.Note, noteOffMessage.Velocity, false));
                     break;
 
                 case MidiMessageType.ControlChange:
                     var ccMessage = args.Message as MidiControlChangeMessage;
-                    if (ControlChangeMessageReceived != null)
-                        ControlChangeMessageReceived(this, new MidiControlChangeMessageReceivedEventArgs(ccMessage.Channel, ccMessage.Controller, ccMessage.ControlValue));
+                    var ev4 = ControlChangeMessageReceived;
+                    if (ev4 != null)
+                        ev4(this, new MidiControlChangeMessageReceivedEventArgs(ccMessage.Channel, ccMessage.Controller, ccMessage.ControlValue));
                     break;
 
                 case MidiMessageType.ProgramChange:
                     var programMessage = args.Message as MidiProgramChangeMessage;
-                    if (ProgramChangeMessageReceived != null)
-                        ProgramChangeMessageReceived(this, new MidiProgramChangeMessageReceivedEventArgs(programMessage.Channel, programMessage.Program));
+                    var ev5 = ProgramChangeMessageReceived;
+                    if (ev5 != null)
+                        ev5(this, new MidiProgramChangeMessageReceivedEventArgs(programMessage.Channel, programMessage.Program));
                     break;
 
 

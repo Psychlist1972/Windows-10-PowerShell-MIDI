@@ -11,7 +11,6 @@ using Windows.Devices.Enumeration;
 namespace PeteBrown.PowerShellMidi
 {
     [Cmdlet(VerbsCommon.Get, "MidiInputPort")]
-
     public class GetMidiInputPort : AsyncPSCmdlet
     {
         [Parameter(
@@ -25,7 +24,10 @@ namespace PeteBrown.PowerShellMidi
             {
                 var port = await MidiInPort.FromIdAsync(Id);
 
-                WriteDebug("Acquired input port: " + port.DeviceId);
+                if (port != null)
+                    WriteDebug("Acquired input port: " + port.DeviceId);
+                else
+                    throw new ArgumentException("No input port available with that Id. You can get the Id through the MidiDeviceInformation returned from Get-Midi[Input|Output]DeviceInformation.", "Id");
 
                 // we need to wrap this because PowerShell doesn't understand WinRT/UWP events
                 var inputPort = new MidiInputPort(port);

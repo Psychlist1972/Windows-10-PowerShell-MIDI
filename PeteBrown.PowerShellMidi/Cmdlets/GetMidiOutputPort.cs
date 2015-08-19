@@ -24,7 +24,10 @@ namespace PeteBrown.PowerShellMidi
             {
                 var port = await MidiOutPort.FromIdAsync(Id);
 
-                WriteDebug("Acquired output port: " + port.DeviceId);
+                if (port != null)
+                    WriteDebug("Acquired output port: " + port.DeviceId);
+                else
+                    throw new ArgumentException("No output port available with that Id. You can get the Id through the MidiDeviceInformation returned from Get-Midi[Input|Output]DeviceInformation.", "Id"); 
 
                 // powershell has problems with some WinRT/UWP objects, so better to wrap it here
                 var outputPort = new MidiOutputPort(port);
