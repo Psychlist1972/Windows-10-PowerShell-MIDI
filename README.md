@@ -84,3 +84,7 @@ If you have ideas for scripts you want to see as examples, please let me know. A
 
 This was built using Visual Studio 2015 Community, RTM. It also uses this VS 2015 add-in for editing PowerShell scripts. Required only if you want to load the psproj in Visual Studio and mess around with the source
 https://visualstudiogallery.msdn.microsoft.com/c9eb3ba8-0c59-4944-9a62-6eee37294597
+
+## Let me know
+
+If you use this in a cool personal or professional project, I'd love to know about it. Feel free to tweet me at @pete_brown or email me at pete dot brown at microsoft dot com.
