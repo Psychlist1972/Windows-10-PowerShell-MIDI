@@ -13,6 +13,7 @@ namespace PeteBrown.PowerShellMidi
     public delegate void MidiNoteOffMessageReceivedEventHandler(object sender, MidiNoteOffMessageReceivedEventArgs e);
     public delegate void MidiControlChangeMessageReceivedEventHandler(object sender, MidiControlChangeMessageReceivedEventArgs e);
     public delegate void MidiProgramChangeMessageReceivedEventHandler(object sender, MidiProgramChangeMessageReceivedEventArgs e);
+    public delegate void MidiPitchBendChangeMessageReceivedEventHandler(object sender, MidiPitchBendChangeMessageReceivedEventArgs e);
 
     public enum MidiFilterMode
     {
@@ -97,8 +98,14 @@ namespace PeteBrown.PowerShellMidi
                         ev5(this, new MidiProgramChangeMessageReceivedEventArgs(programMessage.Channel, programMessage.Program));
                     break;
 
+                case MidiMessageType.PitchBendChange:
+                    var pitchBendChangeMessage = args.Message as MidiPitchBendChangeMessage;
+                    var ev6 = PitchBendChangeMessageReceived;
+                    if (ev6 != null)
+                        ev6(this, new MidiPitchBendChangeMessageReceivedEventArgs(pitchBendChangeMessage.Channel,  pitchBendChangeMessage.Bend));
+                    break;
 
-                    // TODO: Add more message types
+                // TODO: Add more message types
 
 
                 default:
@@ -117,6 +124,6 @@ namespace PeteBrown.PowerShellMidi
         public event MidiNoteOffMessageReceivedEventHandler NoteOffMessageReceived;
         public event MidiControlChangeMessageReceivedEventHandler ControlChangeMessageReceived;
         public event MidiProgramChangeMessageReceivedEventHandler ProgramChangeMessageReceived;
-
+        public event MidiPitchBendChangeMessageReceivedEventHandler PitchBendChangeMessageReceived;
     }
 }

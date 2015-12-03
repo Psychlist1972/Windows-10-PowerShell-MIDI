@@ -66,6 +66,7 @@
     <Compile Include="Cmdlets\GetMidiInputPort.cs" />
     <Compile Include="Cmdlets\GetMidiOutputPort.cs" />
     <Compile Include="Cmdlets\GetMidiOutputDeviceInformation.cs" />
+    <Compile Include="Support Classes\MidiPitchBendChangeMessageReceivedEventArgs.cs" />
     <Compile Include="Support Classes\MidiControlChangeMessageReceivedEventArgs.cs" />
     <Compile Include="Support Classes\MidiDeviceUpdatedEventArgs.cs" />
     <Compile Include="Support Classes\MidiDeviceRemovedEventArgs.cs" />
