@@ -88,3 +88,8 @@ https://visualstudiogallery.msdn.microsoft.com/c9eb3ba8-0c59-4944-9a62-6eee37294
 ## Let me know
 
 If you use this in a cool personal or professional project, I'd love to know about it. Feel free to tweet me at @pete_brown or email me at pete dot brown at microsoft dot com.
+
+# MIDI Port Names
+Don't like the Windows 10 / WinRT MIDI Port names? Check out this (unofficial, unsupported) PowerShell script that lets you rename them to anything you want:
+https://gist.github.com/Psychlist1972/ec5c52c9e4999710191d4bb07e82f98a
+
