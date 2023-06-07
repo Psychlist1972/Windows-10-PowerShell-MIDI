@@ -1,5 +1,7 @@
 # Windows-10-PowerShell-MIDI
 
+NOTE: This works with classic PowerShell, not the newer .NET (Core) PowerShell versions.
+
 Folks on the Mac use MIDI controllers and the built-in scripting language to control things like app switching, or to send commands to specific apps. I first heard about this when watching a Sonic State podcast and learning that Nick uses (or used at the time) a little Korg Nano control to switch between people on Skype and/or change which input was active on the podcasting program. 
 
 I've been totally jealous of that for some time. With the release of Windows 10 and our new, modern, multi-client MIDI API, I thought it was time to build out something like this for Windows users. We don't have MIDI routing in Windows yet, but we do have PowerShell, which lets you do a fair bit of automation and other system-level hacking.
