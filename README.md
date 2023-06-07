@@ -1,6 +1,6 @@
 # Windows-10-PowerShell-MIDI
 
-NOTE: This works with classic PowerShell, not the newer .NET (Core) PowerShell versions.
+**NOTE: This works with classic PowerShell, not the newer .NET (Core) PowerShell versions.**
 
 Folks on the Mac use MIDI controllers and the built-in scripting language to control things like app switching, or to send commands to specific apps. I first heard about this when watching a Sonic State podcast and learning that Nick uses (or used at the time) a little Korg Nano control to switch between people on Skype and/or change which input was active on the podcasting program. 
 
